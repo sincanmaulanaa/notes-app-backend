@@ -1,0 +1,28 @@
+{
+  "name": "notes-app-backend",
+  "version": "1.0.0",
+  "description": "Training project for Dicoding Acadamey",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sincanmaulanaa/notes-app-backend.git"
+  },
+  "keywords": [
+    "nodejs",
+    "hapi",
+    "javascript",
+    "API"
+  ],
+  "author": "Sincan Maulana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sincanmaulanaa/notes-app-backend/issues"
+  },
+  "homepage": "https://github.com/sincanmaulanaa/notes-app-backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
