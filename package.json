@@ -4,8 +4,8 @@
   "description": "Training project for Dicoding Acadamey",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "lint": "eslint ./"
+    "start": "nodemon ./src/server.js",
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
     "eslint": "^8.41.0",
     "eslint-config-google": "^0.14.0",
     "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2"
   }
 }
