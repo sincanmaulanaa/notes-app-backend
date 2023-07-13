@@ -45,7 +45,7 @@ class UsersHandler {
 
       // SERVER ERROR
       const response = h.response({
-        status: 'fail',
+        status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami',
       });
 
@@ -67,19 +67,19 @@ class UsersHandler {
         },
       };
     } catch (error) {
-      if (error instanceof NotFoundError) {
+      if (error instanceof ClientError) {
         const response = h.response({
           status: 'fail',
           message: error.message,
         });
 
-        response.code(404);
+        response.code(error.statusCode);
         return response;
       }
 
       // SERVER ERROR
       const response = h.response({
-        status: 'fail',
+        status: 'error',
         message: 'Maaf, terjadi kegagalan pada server kami',
       });
 
